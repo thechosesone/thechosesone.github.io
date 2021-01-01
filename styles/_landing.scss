@@ -1,0 +1,111 @@
+.landing {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+&__main-container {
+display: block;
+width: 100%;
+}
+
+}
+
+#bio {
+    margin-bottom: 64px;
+    color: $textprimary;
+    @include breakpoint-down(small) {
+        margin-bottom: 36px;
+    }
+}
+.bio {
+    &__name {
+        margin: 0 0 16px 0;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: 'Raleway', sans-serif;
+
+        @include breakpoint-down(small) {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__jobs {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+
+        @include breakpoint-down(small) {
+            font-size: 14px;
+        }
+
+    }
+}
+
+#main-title {
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: $textprimary;
+    margin-bottom: 72px;
+
+    > span {
+        color: $textblue;
+    }
+
+
+    @include breakpoint-down(medium) {
+        font-size: 36px;
+        margin-bottom: 64px;
+    }
+
+    @include breakpoint-down(small) {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 36px;
+    }
+}
+
+.scrollcall {
+    height: 96px;
+    width: 36px;
+    border: solid $textprimary 1px;
+    border-radius: 20px;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-top: 48px;
+    box-sizing: border-box;
+
+    @include breakpoint-down(medium) {
+        height: 64px;
+        width: 24px;
+        border-radius: 20px;
+        margin: 0;
+        padding-top: 28px;
+    }
+
+    &__arrow {
+
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: $textprimary;
+        margin: auto;
+        animation: scrollarrow 2s ease-in-out infinite;
+/*
+        &::before{
+            display: block;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: $textblue;
+            transform: translateX(-3.45px) translateY(22px);
+        }
+*/
+
+    }
+}

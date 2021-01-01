@@ -1,0 +1,61 @@
+#hamburgerbutton {
+
+    width: 24px;
+    height: 8px;
+    padding: 8px 0 8px 0;
+
+    > span {
+
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: $textblue;
+        transform-origin: 16px 1px;
+        
+
+        
+        &:not(:last-child) {
+
+            margin-bottom: 4px;
+
+
+
+        }
+    }
+
+    &.open {
+
+        > span {
+
+            animation: span1 600ms ease-in-out forwards;
+            
+
+            &:not(:last-child) {
+
+                animation: span2 600ms ease-in-out forwards;
+    
+            }
+
+        }
+    }
+
+    &.closed {
+        > span {
+
+            animation: closespan1 600ms ease-in-out forwards;
+            
+
+            &:not(:last-child) {
+
+                animation: closespan2 600ms ease-in-out forwards;
+    
+            }
+
+        }
+
+    }
+}
+
+.overlay {
+    background-color: #fff;  
+}

@@ -1,0 +1,59 @@
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    width: 100%;
+
+    &__home {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: $textblue;
+    }
+
+    &__links {
+
+        display: flex;
+        padding: 0;
+
+       > a {
+            font-family: 'Raleway', sans-serif;
+            color: $textprimary;
+            font-weight: 700;
+            text-decoration: none;
+            margin-right: 1rem;
+
+            &:last-child {
+
+                color: $textblue;
+                &:hover {
+                    color: $accentprimary;
+            }
+         }
+
+            &::before {
+
+                content: "/";
+                margin-right: 1rem;
+                color: $textprimary;
+            }
+
+            &:first-child {
+                
+               &::before{content: none;
+               }} 
+            
+            &:hover {
+
+                color: $textblue;
+
+                &:last-child {
+
+                    color: $accentprimary;
+                }
+            }
+        }
+    }
+
+}
