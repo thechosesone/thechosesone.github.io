@@ -352,12 +352,6 @@ a, a:visited, a:hover {
   color: #202a25;
 }
 
-@media (max-width: 39.9375em) {
-  #bio {
-    margin-bottom: 36px;
-  }
-}
-
 .bio__name {
   margin: 0 0 16px 0;
   font-weight: 400;
@@ -408,7 +402,7 @@ a, a:visited, a:hover {
   #main-title {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 36px;
+    margin-bottom: 64px;
   }
 }
 
@@ -453,5 +447,11 @@ a, a:visited, a:hover {
             transform: translateX(-3.45px) translateY(22px);
         }
 */
+}
+
+.scrollcall__arrowhead {
+  width: 24px;
+  height: auto;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */
