@@ -5,14 +5,27 @@ body {
     background-color: #eef0f2;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 a, a:visited, a:hover {
     text-decoration: none;
 }
-//fonts
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
 
 //colors
 
 $textprimary: #202a25;
+$textsecondary: #5A6761;
 $textblue: #25148b;
 $accentprimary: #ff9f1c;
 
@@ -80,3 +93,100 @@ $accentprimary: #ff9f1c;
     }
 }
 
+
+//fonts
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: $textprimary;
+    font-size: 36px;
+    margin-bottom: 96px;
+
+    @include breakpoint-down(medium) {
+        font-size: 24px;
+    }
+}
+
+//COMPONENTS
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @include breakpoint-down(small) {
+        flex-direction: column-reverse;
+    }
+
+&__content {
+    min-width: 288px;
+    max-width: 384px;
+
+    @include breakpoint-down(small) {
+        width: 100%;
+    }
+}
+
+&__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: $textprimary;
+    margin: 42px 0 12px 0;
+
+    @include breakpoint-down(small) {
+        font-size: 18px;
+}
+}
+&__tags {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $textsecondary;
+    margin-bottom: 16px;
+}
+
+&__description {
+
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $textprimary;
+    margin-bottom: 24px;
+}
+
+&__image {
+    width: 384px;
+    height:236px;
+    background-color: $textblue;
+
+    @include breakpoint-down(small) {
+        width: 100%;
+
+    }
+}
+
+}
+
+.primary-button {
+    display: block;
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: $textprimary;
+    background-color: transparent;
+    border: solid 1px $textprimary;
+    border-radius: 18px;
+    padding:8.2px 36px;
+    transition: 150ms;
+
+    &:hover {
+        background-color: $textblue;
+        color: #fff;
+        border: solid 1px $textblue;
+
+    }
+
+}

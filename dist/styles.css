@@ -6,8 +6,17 @@ body {
   background-color: #eef0f2;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 40em) {
@@ -73,6 +82,116 @@ a, a:visited, a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #202a25;
+  font-size: 36px;
+  margin-bottom: 96px;
+}
+
+@media (max-width: 63.9375em) {
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 39.9375em) {
+  .project-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.project-card__content {
+  min-width: 288px;
+  max-width: 384px;
+}
+
+@media (max-width: 39.9375em) {
+  .project-card__content {
+    width: 100%;
+  }
+}
+
+.project-card__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #202a25;
+  margin: 42px 0 12px 0;
+}
+
+@media (max-width: 39.9375em) {
+  .project-card__title {
+    font-size: 18px;
+  }
+}
+
+.project-card__tags {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5A6761;
+  margin-bottom: 16px;
+}
+
+.project-card__description {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #202a25;
+  margin-bottom: 24px;
+}
+
+.project-card__image {
+  width: 384px;
+  height: 236px;
+  background-color: #25148b;
+}
+
+@media (max-width: 39.9375em) {
+  .project-card__image {
+    width: 100%;
+  }
+}
+
+.primary-button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202a25;
+  background-color: transparent;
+  border: solid 1px #202a25;
+  border-radius: 18px;
+  padding: 8.2px 36px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.primary-button:hover {
+  background-color: #25148b;
+  color: #fff;
+  border: solid 1px #25148b;
 }
 
 @-webkit-keyframes span1 {
@@ -342,6 +461,12 @@ a, a:visited, a:hover {
           justify-content: center;
 }
 
+@media (max-width: 39.9375em) {
+  .landing {
+    height: 90vh;
+  }
+}
+
 .landing__main-container {
   display: block;
   width: 100%;
@@ -384,7 +509,7 @@ a, a:visited, a:hover {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: #202a25;
-  margin-bottom: 72px;
+  margin-bottom: 96px;
 }
 
 #main-title > span {
@@ -394,7 +519,7 @@ a, a:visited, a:hover {
 @media (max-width: 63.9375em) {
   #main-title {
     font-size: 36px;
-    margin-bottom: 64px;
+    margin-bottom: 96px;
   }
 }
 
@@ -402,41 +527,35 @@ a, a:visited, a:hover {
   #main-title {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 64px;
+    margin-bottom: 72px;
   }
 }
 
-.scrollcall {
-  height: 96px;
-  width: 36px;
-  border: solid #202a25 1px;
-  border-radius: 20px;
-  margin: 0;
-  padding-bottom: 8px;
-  padding-top: 48px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@media (max-width: 63.9375em) {
-  .scrollcall {
-    height: 64px;
-    width: 24px;
-    border-radius: 20px;
-    margin: 0;
-    padding-top: 28px;
-  }
-}
-
-.scrollcall__arrow {
-  display: block;
-  width: 1px;
-  height: 24px;
-  background-color: #202a25;
-  margin: auto;
+.arrow-animated {
+  width: 24px;
+  height: auto;
   -webkit-animation: scrollarrow 2s ease-in-out infinite;
           animation: scrollarrow 2s ease-in-out infinite;
-  /*
+}
+
+@media (min-width: 40em) {
+  .arrow-animated {
+    width: 36px;
+    margin: 0 auto;
+  }
+}
+
+/*
+    &__arrow {
+
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: $textprimary;
+        margin: auto;
+        animation: scrollarrow 2s ease-in-out infinite;
+
+/*
         &::before{
             display: block;
             content: '';
@@ -447,11 +566,4 @@ a, a:visited, a:hover {
             transform: translateX(-3.45px) translateY(22px);
         }
 */
-}
-
-.scrollcall__arrowhead {
-  width: 24px;
-  height: auto;
-  margin: 0 auto;
-}
 /*# sourceMappingURL=styles.css.map */
