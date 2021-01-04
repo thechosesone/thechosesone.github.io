@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #eef0f2;
+  background-color: #F4F7F6;
+  /* background-color: #eef0f2;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,10 +91,10 @@ p {
 
 .section-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #202a25;
   font-size: 36px;
-  margin-bottom: 96px;
+  margin-bottom: 64px;
 }
 
 @media (max-width: 63.9375em) {
@@ -130,7 +135,7 @@ p {
 
 .project-card__title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 24px;
   color: #202a25;
   margin: 42px 0 12px 0;
@@ -175,15 +180,15 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #202a25;
   background-color: transparent;
   border: solid 1px #202a25;
   border-radius: 18px;
-  padding: 8.2px 36px;
+  padding: 9.5px 36px 8.9px 36px;
   -webkit-transition: 150ms;
   transition: 150ms;
 }
@@ -192,6 +197,35 @@ p {
   background-color: #25148b;
   color: #fff;
   border: solid 1px #25148b;
+}
+
+.secondary-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #25148b;
+  background-color: transparent;
+  padding: 9.5px 36px 8.9px 36px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.secondary-button__arrow {
+  margin-left: 24px;
+}
+
+.secondary-button__arrow:hover {
+  margin-left: 36px;
+}
+
+.secondary-button:hover__arrow {
+  margin-left: 36px;
 }
 
 @-webkit-keyframes span1 {
@@ -439,7 +473,7 @@ p {
 }
 
 .header__links > a:hover {
-  color: #25148b;
+  color: #ff9f1c;
 }
 
 .header__links > a:hover:last-child {
@@ -531,7 +565,34 @@ p {
   }
 }
 
+.arrow-container {
+  display: block;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 36px;
+  height: 96px;
+  border: solid 1px #202a25;
+  border-radius: 18px;
+  padding: 64px 6px 12px 6px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+@media (max-width: 63.9375em) {
+  .arrow-container {
+    width: 32px;
+    height: 84px;
+    padding: 48px 4px 12px 4px;
+  }
+}
+
+.arrow-container:hover {
+  border-color: #ff9f1c;
+}
+
 .arrow-animated {
+  display: block;
   width: 24px;
   height: auto;
   -webkit-animation: scrollarrow 2s ease-in-out infinite;
@@ -566,4 +627,7 @@ p {
             transform: translateX(-3.45px) translateY(22px);
         }
 */
+#recent-work {
+  padding-top: 36px;
+}
 /*# sourceMappingURL=styles.css.map */

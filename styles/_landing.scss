@@ -75,7 +75,40 @@ width: 100%;
 }
 
 
+.arrow-container {
+
+display: block;
+
+margin:auto;
+
+box-sizing: border-box;
+
+width: 36px;
+height:96px;
+
+border: solid 1px $textprimary;
+border-radius: 18px;
+
+padding: 64px 6px 12px 6px;
+
+transition: 300ms;
+
+@include breakpoint-down(medium) {
+    width: 32px;
+    height:84px;
+    padding: 48px 4px 12px 4px;
+}
+
+&:hover {
+
+    border-color: $accentprimary;
+
+}
+
+}
+
 .arrow-animated {
+    display: block;
     width: 24px;
     height: auto;
     animation: scrollarrow 2s ease-in-out infinite;
