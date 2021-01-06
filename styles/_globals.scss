@@ -62,7 +62,7 @@ $accentprimary: #ff9f1c;
 
     @include breakpoint-down(small) {
         margin: auto;
-        min-width: 280px;
+        min-width: 264px;
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -167,7 +167,7 @@ $accentprimary: #ff9f1c;
     }
 
     &__content {
-        min-width: 288px;
+        min-width: 264px;
         max-width: 384px;
 
         @include breakpoint-down(small) {

@@ -52,7 +52,7 @@ hr {
 @media (max-width: 39.9375em) {
   .maincontainer {
     margin: auto;
-    min-width: 280px;
+    min-width: 264px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -165,7 +165,7 @@ hr {
 }
 
 .project-card__content {
-  min-width: 288px;
+  min-width: 264px;
   max-width: 384px;
 }
 
@@ -703,7 +703,7 @@ hr {
 @media (max-width: 63.9375em) {
   .aboutme__column-2 {
     width: 320px;
-    min-width: 288px;
+    min-width: 264px;
     margin-left: 24px;
   }
 }
@@ -711,7 +711,7 @@ hr {
 @media (max-width: 39.9375em) {
   .aboutme__column-2 {
     width: 100%;
-    min-width: 288px;
+    min-width: 264px;
     margin-left: 0;
   }
 }
@@ -727,6 +727,7 @@ hr {
 @media (max-width: 63.9375em) {
   .aboutme__title {
     margin-bottom: 16px;
+    font-size: 24px;
   }
 }
 
@@ -830,7 +831,7 @@ hr {
   width: 100%;
   font-size: 24px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,8 +855,15 @@ hr {
 .footer-list__items {
   list-style-type: none;
   font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 39.9375em) {
+  .footer-list__items {
+    font-size: 14px;
+  }
 }
 
 .footer-list__items > li {
