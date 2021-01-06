@@ -24,6 +24,11 @@ p {
   padding: 0;
 }
 
+hr {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 40em) {
   .maincontainer {
     min-width: 960px;
@@ -90,17 +95,42 @@ p {
 }
 
 .section-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  color: #202a25;
-  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 64px;
 }
 
+.section-title__text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px;
+  color: #202a25;
+}
+
 @media (max-width: 63.9375em) {
-  .section-title {
+  .section-title__text {
     font-size: 24px;
+    -ms-flex-preferred-size: 160px;
+        flex-basis: 160px;
   }
+}
+
+.section-title__line {
+  content: '';
+  height: 1px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #202a25;
 }
 
 .project-card {
@@ -197,35 +227,6 @@ p {
   background-color: #25148b;
   color: #fff;
   border: solid 1px #25148b;
-}
-
-.secondary-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  color: #25148b;
-  background-color: transparent;
-  padding: 9.5px 36px 8.9px 36px;
-  -webkit-transition: 150ms;
-  transition: 150ms;
-}
-
-.secondary-button__arrow {
-  margin-left: 24px;
-}
-
-.secondary-button__arrow:hover {
-  margin-left: 36px;
-}
-
-.secondary-button:hover__arrow {
-  margin-left: 36px;
 }
 
 @-webkit-keyframes span1 {
@@ -629,5 +630,129 @@ p {
 */
 #recent-work {
   padding-top: 36px;
+}
+
+#aboutme {
+  width: 100%;
+  padding-top: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 39.9375em) {
+  #aboutme {
+    display: block;
+    padding-top: 24px;
+  }
+}
+
+.aboutme__column-1 {
+  content: "";
+  position: relative;
+  width: 50%;
+  height: 632px;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  background-image: url(/dist/assets/Self-portrait.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+@media (max-width: 63.9375em) {
+  .aboutme__column-1 {
+    width: 100%;
+    background-size: 70%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .aboutme__column-1 {
+    width: 100%;
+    background-size: 60%;
+    background-position: center bottom;
+    height: 375px;
+    margin-bottom: 36px;
+  }
+}
+
+.aboutme__column-2 {
+  width: 408px;
+  margin-left: 36px;
+  opacity: 89%;
+}
+
+@media (max-width: 63.9375em) {
+  .aboutme__column-2 {
+    width: 320px;
+    min-width: 288px;
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .aboutme__column-2 {
+    width: 100%;
+    min-width: 288px;
+    margin-left: 0;
+  }
+}
+
+.aboutme__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #25148b;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 63.9375em) {
+  .aboutme__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.aboutme__list {
+  list-style-type: none;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.aboutme__list__item {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #202a25;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.aboutme__list__item:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  background: url(/dist/assets/list-arrow.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: -24px;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #202a25;
+  height: 624px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 39.9375em) {
+  .vertical-line {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -23,6 +23,11 @@ p {
     padding: 0;
 }
 
+hr {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
@@ -101,15 +106,40 @@ $accentprimary: #ff9f1c;
 
 //fonts
 .section-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    color: $textprimary;
-    font-size: 36px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
     margin-bottom: 64px;
 
-    @include breakpoint-down(medium) {
-        font-size: 24px;
+
+    &__text{
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+
+        flex-basis: 240px;
+        
+        color: $textprimary;
+
+        @include breakpoint-down(medium) {
+            font-size: 24px;
+
+            flex-basis: 160px;
+        }
     }
+
+    &__line {
+
+        content:'';
+        height: 1px;
+        flex-grow: 1;
+        background-color: $textprimary;
+    }
+
 }
 
 //COMPONENTS

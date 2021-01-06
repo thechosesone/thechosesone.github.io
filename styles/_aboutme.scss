@@ -1,0 +1,133 @@
+#aboutme {
+
+    width: 100%;
+    padding-top: 128px;
+    display: flex;
+    align-items: flex-start;
+
+    @include breakpoint-down(small) {
+        display: block;
+        padding-top: 24px;
+    }
+
+}
+
+.aboutme__column-1 {
+
+    content: "";
+    position: relative;
+
+    width: 50%;
+    height: 632px;
+    flex-basis: 1;
+
+    background-image: url(/dist/assets/Self-portrait.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @include breakpoint-down(medium) {
+        width: 100%;
+
+        background-size: 70%;
+    }
+
+    @include breakpoint-down(small) {
+        width: 100%;
+
+        background-size: 60%;
+
+        background-position: center bottom;
+        height: 375px;
+        margin-bottom: 36px;
+
+    }
+    
+
+
+
+}
+
+.aboutme__column-2 {
+
+    width: 408px;
+    margin-left: 36px;
+    opacity: 89%;
+    
+    @include breakpoint-down(medium) {
+        width: 320px;
+        min-width: 288px;
+        margin-left: 24px;
+    }
+
+    @include breakpoint-down(small) {
+
+        width:100%;
+        min-width:288px;
+        margin-left: 0;
+    }
+
+}
+
+.aboutme__title {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+
+    color: $textblue;
+
+    margin-bottom: 24px;
+
+    @include breakpoint-down(medium) {
+        font-size: 24px;
+        margin-bottom: 16px;
+}
+
+}
+
+.aboutme__list {
+
+    list-style-type: none;
+    margin-top:24px;
+    padding:0;
+
+    &__item {
+
+
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+
+        color: $textprimary;
+        margin-left: 24px;
+        margin-bottom: 24px;
+
+        &:before {
+
+            content:'';
+            display: inline-block;
+            vertical-align: top;
+
+            background: url(/dist/assets/list-arrow.svg);
+
+            width: 24px;
+            height: 24px;
+
+            margin-left: -24px;
+
+        }
+    }
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: $textprimary;
+    height: 624px;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint-down(small) {
+        display: none;
+    }
+}
