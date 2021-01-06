@@ -7,7 +7,7 @@
 
     @include breakpoint-down(small) {
         display: block;
-        padding-top: 24px;
+        padding-top: 0;
     }
 
 }
@@ -38,7 +38,7 @@
         background-size: 60%;
 
         background-position: center bottom;
-        height: 375px;
+        height: 60vw;
         margin-bottom: 36px;
 
     }

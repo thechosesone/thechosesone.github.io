@@ -646,7 +646,7 @@ hr {
 @media (max-width: 39.9375em) {
   #aboutme {
     display: block;
-    padding-top: 24px;
+    padding-top: 0;
   }
 }
 
@@ -675,7 +675,7 @@ hr {
     width: 100%;
     background-size: 60%;
     background-position: center bottom;
-    height: 375px;
+    height: 60vw;
     margin-bottom: 36px;
   }
 }
