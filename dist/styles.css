@@ -391,6 +391,66 @@ hr {
   }
 }
 
+@-webkit-keyframes menufadein {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes menufadein {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menufadeout {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes menufadeout {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
 #hamburgerbutton {
   width: 24px;
   height: 8px;
@@ -435,6 +495,7 @@ hr {
 }
 
 .header {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,6 +618,7 @@ hr {
   font-weight: 400;
   color: #202a25;
   margin-bottom: 96px;
+  letter-spacing: 0.006em;
 }
 
 #main-title > span {
@@ -876,5 +938,39 @@ hr {
 
 .footer-list__items > li > a:hover {
   color: #ff9f1c;
+}
+
+.mobilemenu {
+  display: none;
+  position: fixed;
+  margin: 0;
+  background-color: #F4F7F6;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  padding-top: 48px;
+  left: 0;
+}
+
+.mobilemenu > a {
+  display: block;
+  padding: 16px 0;
+  margin: auto;
+  color: #25148b;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.mobilemenu.menuopen {
+  -webkit-animation: menufadein 600ms forwards;
+          animation: menufadein 600ms forwards;
+  display: block;
+}
+
+.mobilemenu.menuclosed {
+  -webkit-animation: menufadeout 600ms forwards;
+          animation: menufadeout 600ms forwards;
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
