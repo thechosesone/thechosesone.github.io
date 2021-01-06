@@ -89,6 +89,19 @@ $accentprimary: #ff9f1c;
     }
 }
 
+.desktop-only {
+    @include breakpoint-down(large) {
+        display: none;
+    }
+}
+
+.mobile-only {
+
+    @include breakpoint-up(xsmall) {
+        display: none;
+    }
+}
+
 //Flexbox
 
 .flex {
