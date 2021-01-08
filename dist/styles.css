@@ -634,7 +634,7 @@ hr {
 
 @media (max-width: 39.9375em) {
   #main-title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 72px;
   }
@@ -972,5 +972,130 @@ hr {
   -webkit-animation: menufadeout 600ms forwards;
           animation: menufadeout 600ms forwards;
   display: block;
+}
+
+.project__title {
+  display: block;
+  width: 100%;
+  margin-top: 144px;
+  margin-bottom: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #202a25;
+}
+
+@media (max-width: 39.9375em) {
+  .project__title {
+    margin-top: 96px;
+    font-size: 36px;
+  }
+}
+
+.project__caption {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans',sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #202a25;
+}
+
+.project__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.project__info > p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #202a25;
+}
+
+.project__info > p:not(:last-child) {
+  margin-right: 36px;
+}
+
+@media (max-width: 63.9375em) {
+  .project__info > p {
+    display: none;
+  }
+}
+
+.project__cover-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 96px;
+}
+
+.article__mainphrase {
+  display: block;
+  width: 100%;
+  margin-bottom: 96px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #202a25;
+  text-align: center;
+}
+
+@media (max-width: 39.9375em) {
+  .article__mainphrase {
+    font-size: 30px;
+    margin-bottom: 48px;
+  }
+}
+
+.article__titleblock {
+  display: block;
+  width: 100%;
+  margin-bottom: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #202a25;
+}
+
+@media (max-width: 39.9375em) {
+  .article__titleblock {
+    font-size: 20px;
+    margin-bottom: 24px;
+    vertical-align: middle;
+  }
+}
+
+.article__titleblock > span {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 96px;
+  vertical-align: middle;
+  color: #202a25;
+  background-color: #202a25;
+  margin-left: 16px;
+}
+
+.article__paragraph {
+  width: 100%;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  color: #202a25;
+  margin-bottom: 30px;
+}
+
+.article__paragraph > span {
+  color: #25148b;
 }
 /*# sourceMappingURL=styles.css.map */

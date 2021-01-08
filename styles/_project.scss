@@ -1,0 +1,166 @@
+.project {
+
+    &__title {
+        display: block;
+        width: 100%;
+
+        margin-top: 144px;
+        margin-bottom: 36px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+
+        color: $textprimary;
+
+        @include breakpoint-down(small) {
+            margin-top: 96px;
+
+            font-size: 36px;
+        }
+    }
+
+    &__caption {
+
+        display: block;
+        width: 100%;
+
+        margin-bottom: 20px;
+
+        font-family: 'Noto Sans',sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        color: $textprimary;
+
+    }
+
+    &__info {
+
+        display: flex;
+        width: 100%;
+
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+
+        line-height: 24px;
+
+        margin-bottom: 24px;
+
+        > p {
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            font-weight: 400;
+    
+            color: $textprimary;
+
+
+            &:not(:last-child) {
+
+                margin-right: 36px;
+            }
+
+            @include breakpoint-down(medium) {
+                display: none;
+            }
+
+        }
+
+    }
+
+    &__cover-image {
+
+        width: 100%;
+        height: auto;
+
+        margin-bottom: 96px;
+
+    }
+
+}
+
+.article {
+
+
+    &__mainphrase {
+
+        display: block;
+        width: 100%;
+
+        margin-bottom: 96px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+
+        color: $textprimary;
+
+        text-align: center;
+
+        @include breakpoint-down(small) {
+
+            font-size: 30px;
+            margin-bottom: 48px;
+        }
+
+    }
+
+    &__titleblock {
+
+        display: block;
+        width: 100%;
+
+        margin-bottom: 36px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+
+        color: $textprimary;
+
+        @include breakpoint-down(small) {
+
+            font-size: 20px;
+            margin-bottom: 24px;
+            vertical-align: middle;
+        }
+
+        > span {
+
+            content: '';
+            display: inline-block;
+            height: 1px;
+            width: 96px;
+            vertical-align: middle;
+            color: $textprimary;
+            background-color: $textprimary;
+            margin-left: 16px;
+        }
+
+    }
+
+    &__paragraph {
+
+        width: 100%;
+        line-height: 24px;
+
+        font-size: 16px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        
+        color: $textprimary;
+
+        > span {
+            color: $textblue;
+        }
+
+        margin-bottom: 30px;
+
+
+
+    }
+
+
+}
