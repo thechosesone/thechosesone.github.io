@@ -207,6 +207,12 @@ $accentprimary: #ff9f1c;
         width: 384px;
         height:236px;
         background-color: $textblue;
+        border-radius: 24px;
+
+        background-image: url(/Projects/Panaweb/assets/coverimage.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
 
         @include breakpoint-down(small) {
             width: 100%;

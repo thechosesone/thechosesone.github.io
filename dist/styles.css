@@ -209,6 +209,11 @@ hr {
   width: 384px;
   height: 236px;
   background-color: #25148b;
+  border-radius: 24px;
+  background-image: url(/Projects/Panaweb/assets/coverimage.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
 }
 
 @media (max-width: 39.9375em) {
@@ -1033,6 +1038,7 @@ hr {
 }
 
 .project__cover-image {
+  display: block;
   width: 100%;
   height: auto;
   margin-bottom: 96px;
@@ -1062,7 +1068,7 @@ hr {
   margin-bottom: 36px;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: #202a25;
 }
 
@@ -1097,5 +1103,9 @@ hr {
 
 .article__paragraph > span {
   color: #25148b;
+}
+
+.articlespace {
+  margin-bottom: 64px;
 }
 /*# sourceMappingURL=styles.css.map */

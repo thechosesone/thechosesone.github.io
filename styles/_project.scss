@@ -72,6 +72,8 @@
 
     &__cover-image {
 
+        display: block;
+
         width: 100%;
         height: auto;
 
@@ -116,7 +118,7 @@
 
         font-family: 'Raleway', sans-serif;
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 500;
 
         color: $textprimary;
 
@@ -152,15 +154,19 @@
         
         color: $textprimary;
 
+
         > span {
             color: $textblue;
         }
 
         margin-bottom: 30px;
-
-
-
+        
     }
 
 
 }
+
+.articlespace {
+
+        margin-bottom: 64px;
+    }
