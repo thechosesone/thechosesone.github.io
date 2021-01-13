@@ -12,10 +12,10 @@
 <body>
     <div class="maincontainer">
         <header class="header">
-            <a class="header__home">J_vtl</a>
+            <a href="/"class="header__home">J_vtl</a>
             <div class="header__links hide-for-mobile">
                 <a href="/#footer">Contact</a>
-                <a href="/Projects">Projects</a>
+                <a href="/#recent-work">Projects</a>
                 <a href="/#aboutme">About me</a>
                 <a href="#">Fun</a>
             </div>
@@ -25,10 +25,10 @@
             </div>
         </header>
         <div class="mobilemenu" id="mobilemenu">
-            <a class="mobilemenu-link" href="/Projects" class="mobilemenu_links">Projects</a>
+            <a class="mobilemenu-link" href="/#recent-work" class="mobilemenu_links">Projects</a>
             <a class="mobilemenu-link" href="/#footer" class="mobilemenu_links">Contact</a>
             <a class="mobilemenu-link" href="/#aboutme" class="mobilemenu_links">About me</a>
-            <a class="mobilemenu-link" href="/fun" class="mobilemenu_links">FUN</a>
+            <a class="mobilemenu-link" href="#" class="mobilemenu_links">FUN</a>
         </div>
         <section class="landing">
             <div class="landing__maincontainer">
@@ -52,17 +52,19 @@
                     <p class="project-card__description">A friendly payment experience with minimal noise, focused on gifts.</p>
                     <a href="/Projects/Panaweb/" class="primary-button">View Project</a>
                 </div>
-                <div class="project-card__image"></div>
+                <div class="project-card__image" id="panaweb"></div>
             </div>
+            <!--
             <div class="project-card">
                 <div class="project-card__content">
-                    <h3 class="project-card__title">PANA website</h3>
-                    <p class="project-card__tags">UX/UI / Responsive Design / Physical products</p>
-                    <p class="project-card__description">A friendly payment experience with minimal noise, focused on gifts.</p>
-                    <a class="primary-button">View Project</a>
+                    <h3 class="project-card__title">Brandfolio</h3>
+                    <p class="project-card__tags">Graphic design / Branding</p>
+                    <p class="project-card__description">A brief compilation of recent branding projects</p>
+                    <a href="/Projects/Brandfolio/" class="primary-button">View Project</a>
                 </div>
-                <img class="project-card__image"></img>
-            </div>
+                <div class="project-card__image" id="brandfolio"></div>
+
+            </div>            -->
         </section>
         <section id="aboutme">
             <div class="aboutme__column-1"></div>
@@ -75,7 +77,7 @@
                 <ul class="aboutme__list">
                     <li class="aboutme__list__item">Started in architecture firms</li>
                     <li class="aboutme__list__item">Developed a passion for visual design and communication</li>
-                    <li class="aboutme__list__item">Now I design products that cover the physical and digital spectrum</li>
+                    <li class="aboutme__list__item">UX/UI and coding are now letting me create and build without limits (:</li>
                 </ul>
                 <h3 class="project-card__title">I´m currently</h3>
                 <ul class="aboutme__list">
@@ -108,5 +110,5 @@
         </div>
     </section>
 </body>
-<script src="menu.js"></script>
+<script src="/menu.js"></script>
 </html>

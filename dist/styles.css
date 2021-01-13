@@ -208,9 +208,7 @@ hr {
 .project-card__image {
   width: 384px;
   height: 236px;
-  background-color: #25148b;
   border-radius: 24px;
-  background-image: url(/Projects/Panaweb/assets/coverimage.png);
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -220,6 +218,14 @@ hr {
   .project-card__image {
     width: 100%;
   }
+}
+
+#panaweb {
+  background-image: url(/Projects/Panaweb/assets/coverimage.png);
+}
+
+#brandfolio {
+  background-image: url(/dist/assets/logofolio.jpg);
 }
 
 .primary-button {
@@ -983,7 +989,7 @@ hr {
   display: block;
   width: 100%;
   margin-top: 144px;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-size: 48px;
   font-weight: 500;
@@ -1000,7 +1006,7 @@ hr {
 .project__caption {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   font-family: 'Noto Sans',sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1024,7 +1030,7 @@ hr {
   font-family: 'Times New Roman', Times, serif;
   font-size: 14px;
   font-weight: 400;
-  color: #202a25;
+  color: #767484;
 }
 
 .project__info > p:not(:last-child) {
@@ -1062,6 +1068,24 @@ hr {
   }
 }
 
+.article__secondaryphrase {
+  display: block;
+  width: 100%;
+  margin-bottom: 96px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #202a25;
+  text-align: center;
+}
+
+@media (max-width: 39.9375em) {
+  .article__secondaryphrase {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+}
+
 .article__titleblock {
   display: block;
   width: 100%;
@@ -1091,6 +1115,12 @@ hr {
   margin-left: 16px;
 }
 
+@media (max-width: 39.9375em) {
+  .article__titleblock > span {
+    width: 64px;
+  }
+}
+
 .article__paragraph {
   width: 100%;
   line-height: 24px;
@@ -1107,5 +1137,51 @@ hr {
 
 .articlespace {
   margin-bottom: 64px;
+}
+
+.project-footer {
+  width: 100%;
+  background-color: #25148b;
+  margin-top: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.project-footer__nextproject {
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (max-width: 39.9375em) {
+  .project-footer__nextproject {
+    font-size: 24px;
+  }
+}
+
+.project-footer__name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.project-footer__button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 3px 16px 6px 16px;
+  border-radius: 24px;
+  margin-top: 24px;
+  color: #fff;
+}
+
+.project-footer__button:hover {
+  color: #ff9f1c;
+  border-color: #ff9f1c;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,7 @@
         width: 100%;
 
         margin-top: 144px;
-        margin-bottom: 36px;
+        margin-bottom: 16px;
 
         font-family: 'Raleway', sans-serif;
         font-size: 48px;
@@ -25,7 +25,7 @@
         display: block;
         width: 100%;
 
-        margin-bottom: 20px;
+        margin-bottom: 48px;
 
         font-family: 'Noto Sans',sans-serif;
         font-size: 14px;
@@ -54,7 +54,7 @@
             font-size: 14px;
             font-weight: 400;
     
-            color: $textprimary;
+            color: #767484;
 
 
             &:not(:last-child) {
@@ -109,6 +109,29 @@
 
     }
 
+    &__secondaryphrase {
+
+        display: block;
+        width: 100%;
+
+        margin-bottom: 96px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+
+        color: $textprimary;
+
+        text-align: center;
+
+        @include breakpoint-down(small) {
+
+            font-size: 24px;
+            margin-bottom: 48px;
+        }
+
+    }
+
     &__titleblock {
 
         display: block;
@@ -139,6 +162,10 @@
             color: $textprimary;
             background-color: $textprimary;
             margin-left: 16px;
+
+            @include breakpoint-down(small) {
+                width: 64px;
+            }
         }
 
     }
@@ -170,3 +197,66 @@
 
         margin-bottom: 64px;
     }
+
+
+.project-footer {
+
+
+    width: 100%;
+
+    background-color: $textblue;
+
+    margin-top: 128px;
+    
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+
+&__nextproject {
+
+    margin-bottom: 30px;
+
+    color: #fff;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+    @include breakpoint-down(small) {
+        font-size: 24px;
+    }
+
+}
+
+&__name {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #fff;
+}
+
+&__button {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 3px 16px 6px 16px;
+    border-radius: 24px;
+
+    margin-top: 24px;
+
+    color: #fff;
+
+    &:hover {
+        color: $accentprimary;
+        border-color: $accentprimary;
+    }
+
+}
+
+}
