@@ -220,12 +220,16 @@ hr {
   }
 }
 
-#panaweb {
+#p-img-pana {
   background-image: url(/Projects/Panaweb/assets/coverimage.png);
 }
 
-#brandfolio {
-  background-image: url(/dist/assets/logofolio.jpg);
+#p-img-calg {
+  background-image: url(/Projects/calg/assets/coverimage.jpg);
+}
+
+#p-img-ccnova {
+  background-image: url(/Projects/ccnova/assets/coverimg.jpg);
 }
 
 .primary-button {
